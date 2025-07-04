@@ -108,7 +108,7 @@ const items = [
 	}),
 	defineSkill({
 		slug: 'py',
-		color: 'orange',
+		color: 'yellow',
 		description: '',
 		logo: Assets.Python,
 		name: 'Python',
@@ -124,11 +124,11 @@ const items = [
 	}),
 	defineSkill({
 		slug: 'dock',
-		color: 'orange',
+		color: 'cyan',
 		description: '',
 		logo: Assets.Docker,
 		name: 'Docker',
-		category: 'devtools'
+		category: 'devops'
 	}),
 	defineSkill({
 		slug: 'pytorch',
@@ -142,13 +142,13 @@ const items = [
 		slug: 'tensorflow',
 		color: 'orange',
 		description: '',
-		logo: Assets.Unknown,
+		logo: Assets.Tensorflow,
 		name: 'TensorFlow',
 		category: 'library'
 	}),
 	defineSkill({
 		slug: 'node',
-		color: 'orange',
+		color: 'green',
 		description: '',
 		logo: Assets.NodeJs,
 		name: 'NodeJS',
@@ -156,7 +156,7 @@ const items = [
 	}),
 	defineSkill({
 		slug: 'flask',
-		color: 'orange',
+		color: 'black',
 		description: '',
 		logo: Assets.Flask,
 		name: 'Flask',
@@ -176,19 +176,19 @@ const items = [
 		description: '',
 		logo: Assets.AWS,
 		name: 'AWS',
-		category: 'devtools'
+		category: 'devops'
 	}),
 	defineSkill({
 		slug: 'kubernetes',
-		color: 'orange',
+		color: 'blue',
 		description: '',
 		logo: Assets.Kubernetes,
 		name: 'Kubernetes',
-		category: 'devtools'
+		category: 'devops'
 	}),
 	defineSkill({
 		slug: 'C',
-		color: 'orange',
+		color: 'blue',
 		description: '',
 		logo: Assets.C,
 		name: 'C',
@@ -196,11 +196,43 @@ const items = [
 	}),
 	defineSkill({
 		slug: 'ruby-on-rails',
-		color: 'orange',
+		color: 'red',
 		description: '',
-		logo: Assets.Unknown,
+		logo: Assets.Rails,
 		name: 'Ruby on Rails',
 		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'shell',
+		color: 'black',
+		description: '',
+		logo: Assets.Bash,
+		name: 'Shell',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'black',
+		description: '',
+		logo: Assets.FastAPI,
+		name: 'FastAPI',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'solidity',
+		color: 'purple',
+		description: '',
+		logo: Assets.Solidity,
+		name: 'Solidity',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'dynamo',
+		color: 'blue',
+		description: '',
+		logo: Assets.DynamoDB,
+		name: 'DynamoDB',
+		category: 'db'
 	})
 ] as const;
 

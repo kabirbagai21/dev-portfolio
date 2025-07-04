@@ -35,7 +35,7 @@ const items: Array<Education> = [
 		degree: 'Mechanical Engineering (Transferred)',
 		description: '',
 		location: 'San Diego',
-		logo: Assets.Unknown,
+		logo: Assets.UCSD,
 		name: '',
 		organization: 'University of California',
 		period: { from: new Date(2021, 9, 0), to: new Date(2022, 6, 0) },

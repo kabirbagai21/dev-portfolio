@@ -72,7 +72,17 @@ const Assets = {
 	Postcss: asset('postcss.svg'),
 	Columbia: asset('columbia.png'),
 	IBM: asset('IBM_logo.svg.png'),
-	PyTorch: asset('pytorch.png')
+	PyTorch: asset('pytorch.png'),
+	HealthEdge: asset('healthedge.png'),
+	Vandy: asset('vandy.png'),
+	Radicle: asset('radicle.jpg'), 
+	Rails: asset('rails.webp'),
+	Bash: asset('bash.png'),
+	Tensorflow: asset('tensorflow.png'),
+	FastAPI: asset('fastapi.svg'),
+	Solidity: asset('solidity.png'),
+	DynamoDB: asset('dynamodb.png'),
+	UCSD: asset('ucsd.webp'),
 };
 
 export default Assets;

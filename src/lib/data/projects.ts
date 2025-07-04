@@ -7,12 +7,12 @@ const items: Array<Project> = [
 		slug: 'cerebral-aneurysm',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography (TOF-MRA) using a 3D U-Net architecture, incorporating anatomically informed sliding windows and weak (spherical) labels. To focus learning on the most relevant regions, we designed an intelligent patch selection strategy guided by vascular anatomy, significantly improving model efficiency and accuracy. We also optimized the pipeline\'s memory usage—reducing the training footprint by over 40%—through custom TensorFlow operations and efficient data loading. We were able to achieve a 0.76 Dice score and 83% sensitivity on the test set, demonstrating the model\'s effectiveness in identifying aneurysms in complex 3D MRA volumes.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography',
 		links: [
 			{ to: 'https://github.com/', label: 'GitHub' },
-			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Paper' }
+			{ to: 'https://drive.google.com/file/d/1A583KvoxQYENKU4906acYr8Om4b7Dzmf/view', label: 'Paper' }
 		],
 		logo: Assets.Unknown,
 		name: 'Cerebral Aneurysm Detection in TOF-MRA',
@@ -23,9 +23,9 @@ const items: Array<Project> = [
 		slug: 'traffic-detection',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'This project uses a dataset of images of street traffic captured at the Amsterdam Ave. and 120th Street intersection. The goal was to build a model that can effectively identify rare classes and situations that have the potential to disrupt traffic flow or cause harm to pedestrians (barricades, emergency vehicles, traffic cones etc). This task is more challenging than typical image classification tasks due to the complexity of the images, limited dataset size (100 training images), and severe class imbalance. We initially tried to train CNNs and transformer models but due to the aforementioned issues, we achieved poor performance with these. We then decided to try a zero-shot vison language model. By leveraging the pre-trained, Recognize Anything Model (RAM) and adapting it for our needs, we achieved a classification performance of 0.716 on the test set, the highest score on the Kaggle in-class competition.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'This project uses a dataset of images of street traffic captured at the Amsterdam Ave. and 120th Street intersection. The goal is to build a model that can effectively identify rare',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
 		logo: Assets.Svelte,
 		name: 'Traffic Disruption Detection with Zero-Shot VLM',
@@ -62,10 +62,10 @@ const items: Array<Project> = [
 		slug: 'study-buddy',
 		color: '#ff3e00',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'Study Buddy is a full-stack web application built with the Ruby on Rails framework to enable collaboration and networking among students in the same class. The app allowed users to form study groups, coordinate on homework, and connect for group projects, offering a first-of-its-kind platform for academic teamwork. In addition to building core backend features and API endpoints, I served as SCRUM master, setting sprint goals, coordinating task ownership, and ensuring smooth integration across the frontend, backend, and deployment pipeline. Under my leadership, our team successfully delivered four releases, culminating in a fully functional and polished live application.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'Study Buddy is a full-stack web application built with the Ruby on Rails framework to enable collaboration and networking among students in the same class.',
+		links: [{ to: 'https://github.com/kabirbagai21/studdybuddyproject', label: 'GitHub' }],
 		logo: Assets.Unknown,
 		name: 'Studdy Buddy',
 		skills: getSkills('ruby-on-rails', 'react'),
@@ -81,10 +81,10 @@ const items: Array<Project> = [
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		shortDescription:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/kabirbagai21/COMS-6998-Blockchain-Project', label: 'GitHub' }],
 		logo: Assets.Svelte,
 		name: 'ReceiptChain',
-		skills: getSkills('solid'),
+		skills: getSkills('solidity', 'fastapi', 'dynamo'),
 		type: 'Blockchain App',
 		screenshots: [
 			
@@ -97,10 +97,10 @@ const items: Array<Project> = [
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		shortDescription:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/kabirbagai21/chatbot', label: 'GitHub' }],
 		logo: Assets.Svelte,
 		name: 'ChatBot',
-		skills: getSkills('C'),
+		skills: getSkills('C', 'shell'),
 		type: 'Systems Programming',
 		screenshots: [
 			

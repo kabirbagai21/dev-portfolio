@@ -13,7 +13,7 @@ const items: Array<Experience> = [
 		type: 'Software and Services',
 		location: 'New York, NY',
 		period: { from: new Date(2025, 5, 0) },
-		skills: getSkills('kubernetes', 'dock'),
+		skills: getSkills('kubernetes', 'dock', 'fastapi'),
 		name: 'AI Architect',
 		color: 'red',
 		links: [],
@@ -23,7 +23,7 @@ const items: Array<Experience> = [
 	{
 		slug: 'software-freelance',
 		company: 'Vanderbilt University Medical Center',
-		description: 'Creating awesome applications for customers.',
+		description: 'I designed and implemented a deep learning pipeline to segment the choroid plexus in brain MRIs—a task complicated by anatomical variability and low contrast. I built the system around a custom 3D UNet architecture and developed a fully automated preprocessing workflow (registration, normalization, data loading) to support large-scale neuroimaging data. To improve performance, I combined three MRI modalities (T1, T2, FLAIR) into a single multi-channel input, leveraging their distinct contrast properties. I also implemented custom data augmentation techniques to enhance generalization given the limited training set, resulting in an 8% improvement in Dice score on the test set.',
 		contract: ContractType.Internship,
 		type: 'Healthcare',
 		location: 'Nashville, TN',
@@ -32,7 +32,7 @@ const items: Array<Experience> = [
 		name: 'Machine Learning Researcher',
 		color: 'blue',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Vandy,
 		shortDescription: 'Center for Imaging and Biomarker Development.'
 	},
 	{
@@ -47,7 +47,7 @@ const items: Array<Experience> = [
 		name: 'Product Engineer',
 		color: 'green',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.HealthEdge,
 		shortDescription: 'HealthRules Payer Platform'
 	},
 	{
@@ -62,7 +62,7 @@ const items: Array<Experience> = [
 		name: 'Software Engineer',
 		color: 'green',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Radicle,
 		shortDescription: 'Data Collection Tools for Clinical Trials'
 	}
 ];

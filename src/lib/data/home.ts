@@ -13,8 +13,8 @@ const hero: {
 	description:
 		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 	links: [
-		{ label: 'GitHub', href: 'https://github.com', icon: 'i-carbon-logo-github' },
-		{ label: 'LinkedIn', href: 'https://linkedin.com/kabir-bagai', icon: 'i-carbon-logo-linkedin' },
+		{ label: 'GitHub', href: 'https://github.com/kabirbagai21', icon: 'i-carbon-logo-github' },
+		{ label: 'LinkedIn', href: 'https://linkedin.com/in/kabir-bagai', icon: 'i-carbon-logo-linkedin' },
 		{ label: 'Email', href: 'mailto:kabirbagai797@gmail.com', icon: 'i-carbon-email' }
 	]
 };
