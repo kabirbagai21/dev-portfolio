@@ -69,7 +69,10 @@ const Assets = {
 	Jest: asset('jest.png'),
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
-	Postcss: asset('postcss.svg')
+	Postcss: asset('postcss.svg'),
+	Columbia: asset('columbia.png'),
+	IBM: asset('IBM_logo.svg.png'),
+	PyTorch: asset('pytorch.png')
 };
 
 export default Assets;

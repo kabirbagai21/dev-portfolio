@@ -4,30 +4,46 @@ import type { Education } from './types';
 const title = 'Education';
 
 const items: Array<Education> = [
+
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'M.S. Computer Science',
 		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
+		location: 'New York',
+		logo: Assets.Columbia,
 		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		organization: 'Columbia University',
+		period: { from: new Date(2025, 8, 0), to: new Date(2026, 5, 0) },
+		shortDescription: '',
+		slug: '',
+		subjects: []
+	},
+	
+	{
+		degree: 'B.S. Computer Science',
+		description: '',
+		location: 'New York',
+		logo: Assets.Columbia,
+		name: '',
+		organization: 'Columbia University',
+		period: { from: new Date(2022, 9, 0), to: new Date(2025, 5, 0) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: []
 	},
+
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Mechanical Engineering (Transferred)',
 		description: '',
-		location: 'USA',
+		location: 'San Diego',
 		logo: Assets.Unknown,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'University of California',
+		period: { from: new Date(2021, 9, 0), to: new Date(2022, 6, 0) },
 		shortDescription: '',
-		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		slug: 'ucsd',
+		subjects: []
 	}
+	
 ];
 
 const EducationData = { title, items };

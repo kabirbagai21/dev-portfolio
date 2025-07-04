@@ -25,12 +25,10 @@
 	import Separator from '../ui/separator/separator.svelte';
 	import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 	import Muted from '../ui/typography/muted.svelte';
+	import GithubLink from '../common/github-link/github-link.svelte';
 
 	const { project }: { project: Project } = $props();
 
-	let from = $derived(getMonthAndYear(project.period.from));
-	let to = $derived(getMonthAndYear(project.period.to));
-	let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
 </script>
 
 <FancyCard
@@ -76,7 +74,7 @@
 				</DropdownMenu>
 			{:else}
 				{#each project.links as link (link.to)}
-					<ButtonLink {link} />
+					<GithubLink {link} />
 				{/each}
 			{/if}
 		</div>
@@ -87,17 +85,10 @@
 			<Icon icon="i-carbon-assembly-cluster" />
 			<Muted>{project.type}</Muted>
 		</Muted>
-		<Muted className="flex flex-row gap-2 items-center">
-			<Icon icon="i-carbon-time" />
-			<Muted>{exactDuration}</Muted>
-		</Muted>
+		
 		<Muted className="py-4 md:py-2 md:min-h-[100px] md:max-h-[100px]"
-			>{ellipsify(project.shortDescription, 100)}</Muted
-		>
-		<div class="flex w-full flex-row items-center justify-between">
-			<Badge variant="outline">{from}</Badge>
-			<Badge variant="outline">{to}</Badge>
-		</div>
+			>{ellipsify(project.shortDescription, 100)}</Muted>
+		
 		<Separator />
 		<div class="flex flex-row flex-wrap items-center gap-2">
 			{#each project.skills as skill (skill.slug)}

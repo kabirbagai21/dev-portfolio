@@ -4,7 +4,7 @@ import type { Project } from './types';
 
 const items: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'cerebral-aneurysm',
 		color: '#5e95e3',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
@@ -12,20 +12,15 @@ const items: Array<Project> = [
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		links: [
 			{ to: 'https://github.com/', label: 'GitHub' },
-			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Reporsitory' },
-			{ to: 'https://svelte.dev/', label: 'Svelte' },
-			{ to: 'https://www.shadcn-svelte.com/', label: 'Shadcn Svelte' }
+			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'Paper' }
 		],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio With Svelte',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		name: 'Cerebral Aneurysm Detection in TOF-MRA',
+		skills: getSkills('py', 'tensorflow'),
+		type: 'Deep Learning Model'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
+		slug: 'traffic-detection',
 		color: '#ff3e00',
 		description:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
@@ -33,12 +28,9 @@ const items: Array<Project> = [
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
 		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
-		period: {
-			from: new Date()
-		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		name: 'Traffic Disruption Detection with Zero-Shot VLM',
+		skills: getSkills('py', 'tensorflow'),
+		type: 'Deep Learning Model',
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -64,6 +56,54 @@ const items: Array<Project> = [
 				label: '6',
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
+		]
+	},
+	{
+		slug: 'study-buddy',
+		color: '#ff3e00',
+		description:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		shortDescription:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Studdy Buddy',
+		skills: getSkills('ruby-on-rails', 'react'),
+		type: 'Full Stack Web App',
+		screenshots: [
+			
+		]
+	}, 
+	{
+		slug: 'receipt-chain',
+		color: '#ff3e00',
+		description:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		shortDescription:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		logo: Assets.Svelte,
+		name: 'ReceiptChain',
+		skills: getSkills('solid'),
+		type: 'Blockchain App',
+		screenshots: [
+			
+		]
+	},
+	{
+		slug: 'chatbot',
+		color: '#ff3e00',
+		description:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		shortDescription:
+			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		logo: Assets.Svelte,
+		name: 'ChatBot',
+		skills: getSkills('C'),
+		type: 'Systems Programming',
+		screenshots: [
+			
 		]
 	}
 ];
