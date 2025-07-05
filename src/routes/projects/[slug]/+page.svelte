@@ -70,6 +70,27 @@
 					{/each}
 				</div>
 			{/if}
+			{#if data.item.videos && data.item.videos.length > 0}
+				<Muted>Videos</Muted>
+				<div class="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+					{#each data.item.videos as video, index (index)}
+						<div class="video-card">
+							{#if video.src.includes('youtube.com') || video.src.includes('youtu.be')}
+								<iframe
+									class="w-full h-[160px] aspect-video"
+									src={video.src.replace('watch?v=', 'embed/') + '?start=130'}
+									title={`Video: ${video.label}`}
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
+								></iframe>
+							{/if}
+							<Muted>{video.label}</Muted>
+						</div>
+					{/each}
+				</div>
+			{/if}
+						
 		</div>
 	{/if}
 </BasePage>

@@ -48,35 +48,19 @@
 				<Tooltip>
 					<TooltipTrigger
 						class="w-full overflow-y-auto overflow-x-hidden truncate text-ellipsis text-nowrap text-left"
+						style="line-height: 1.5; padding-bottom: 2px;"
 					>
 						{project.name}
 					</TooltipTrigger>
 					<TooltipContent>{project.name}</TooltipContent>
 				</Tooltip>
 			</CardTitle>
-			{#if project.links.length > 2}
-				<ButtonLink link={project.links[0]} />
-				<DropdownMenu>
-					<DropdownMenuTrigger>
-						<Button size="icon" variant="outline"
-							><Icon icon="i-carbon-overflow-menu-vertical" /></Button
-						>
-					</DropdownMenuTrigger>
-					<DropdownMenuContent>
-						{#each project.links.slice(1) as link (link.to)}
-							<a href={link.to} target={'_blank'}>
-								<DropdownMenuItem>
-									{link.label}
-								</DropdownMenuItem>
-							</a>
-						{/each}
-					</DropdownMenuContent>
-				</DropdownMenu>
-			{:else}
-				{#each project.links as link (link.to)}
+			{#each project.links as link (link.to)}
+				{#if link.label === 'GitHub'}
 					<GithubLink {link} />
-				{/each}
-			{/if}
+				{/if}
+			{/each}
+		
 		</div>
 		<Separator />
 	</CardHeader>

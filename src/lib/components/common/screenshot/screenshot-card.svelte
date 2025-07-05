@@ -28,11 +28,11 @@
 			>
 		</Card>
 	</DialogTrigger>
-	<DialogContent class="flex min-h-[70%] min-w-[70%] flex-col">
+	<DialogContent class="flex min-h-[95%] min-w-[90%] flex-col">
 		<DialogTitle>{item.label}</DialogTitle>
 		<div
-			class="flex-1 bg-cover bg-center bg-no-repeat"
-			style={`background-image: url("${item.src}")`}
+			class="flex-1"
+			style={`background-image: url("${item.src}"); background-size: contain; background-repeat: no-repeat; background-position: center;`}
 		></div>
 		<DialogFooter>
 			<DialogClose>

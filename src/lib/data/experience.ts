@@ -15,10 +15,10 @@ const items: Array<Experience> = [
 		period: { from: new Date(2025, 5, 0) },
 		skills: getSkills('kubernetes', 'dock', 'fastapi'),
 		name: 'AI Architect',
-		color: 'red',
+		color: 'blue',
 		links: [],
 		logo: Assets.IBM,
-		shortDescription: 'Customer Success Management (CSM)'
+		shortDescription: 'Customer Success Management'
 	},
 	{
 		slug: 'software-freelance',
@@ -30,7 +30,7 @@ const items: Array<Experience> = [
 		period: { from: new Date(2024, 6, 0), to: new Date(2024, 9, 0) },
 		skills: getSkills('pytorch', 'py'),
 		name: 'Machine Learning Researcher',
-		color: 'blue',
+		color: 'gold',
 		links: [],
 		logo: Assets.Vandy,
 		shortDescription: 'Center for Imaging and Biomarker Development.'
@@ -45,7 +45,7 @@ const items: Array<Experience> = [
 		period: { from: new Date(2023, 5, 0), to: new Date(2023, 8, 0) },
 		skills: getSkills('java', 'node', 'js'),
 		name: 'Product Engineer',
-		color: 'green',
+		color: 'cyan',
 		links: [],
 		logo: Assets.HealthEdge,
 		shortDescription: 'HealthRules Payer Platform'
@@ -53,14 +53,14 @@ const items: Array<Experience> = [
 	{
 		slug: 'radicle-science',
 		company: 'Radicle Science',
-		description: 'Creating awesome applications for customers.',
+		description: 'I spearheaded the development of an application to collect and analyze biometric data from Fitbit wearables, providing the company with quantitative data to supplement their otherwise qualitative clinical trials. I gained a strong understanding of the Flask web framework, using it to build frontend that authenticates users, compliant with OAuth2 protocols and designed a back-end in Python and PostgreSQL to aggregate 50+ data points per user per day from Fitbit API. Lastly, I integrated, tested and deployed end-to-end application in a serverless environment using AWS Lambda and Docker to automate scalability for trials with 1000+ participants. ',
 		contract: ContractType.PartTime,
 		type: 'Software Development',
 		location: 'Remote',
 		period: { from: new Date(2022, 3, 0), to: new Date(2022, 12, 0) },
 		skills: getSkills('flask', 'postgres', 'aws'),
 		name: 'Software Engineer',
-		color: 'green',
+		color: 'purple',
 		links: [],
 		logo: Assets.Radicle,
 		shortDescription: 'Data Collection Tools for Clinical Trials'

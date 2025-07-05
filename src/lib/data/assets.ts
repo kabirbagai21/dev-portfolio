@@ -71,7 +71,7 @@ const Assets = {
 	Ruvy: asset('ruvy.svg'),
 	Postcss: asset('postcss.svg'),
 	Columbia: asset('columbia.png'),
-	IBM: asset('IBM_logo.svg.png'),
+	IBM: asset('ibm.png'),
 	PyTorch: asset('pytorch.png'),
 	HealthEdge: asset('healthedge.png'),
 	Vandy: asset('vandy.png'),
@@ -83,6 +83,12 @@ const Assets = {
 	Solidity: asset('solidity.png'),
 	DynamoDB: asset('dynamodb.png'),
 	UCSD: asset('ucsd.webp'),
+	Traffic: asset('Traffic.png'),
+	Aneurysm: asset('Aneurysm.jpg'),
+	Heroku: asset('heroku.webp'),
+	StuddyBuddy: asset('studybuddy.png'),
+	Ethereum: asset('receiptchain.webp'),
+	TCP: asset('tcp.png'),
 };
 
 export default Assets;

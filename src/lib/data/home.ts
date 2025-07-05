@@ -9,9 +9,8 @@ const hero: {
 	description: string;
 	links: Array<{ label: string; href: string; icon: `i-carbon-${string}` }>;
 } = {
-	title: `${BaseData.fullName},`,
-	description:
-		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+	title: `${BaseData.fullName}`,
+	description: '',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com/kabirbagai21', icon: 'i-carbon-logo-github' },
 		{ label: 'LinkedIn', href: 'https://linkedin.com/in/kabir-bagai', icon: 'i-carbon-logo-linkedin' },
