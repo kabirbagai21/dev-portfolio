@@ -12,7 +12,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography',
 		links: [
-			{ to: 'https://github.com/', label: 'GitHub' },
+			{ to: 'https://github.com/ecbme6040/e6691_2025spring_Project_ABAD_kb3343_mmk2266', label: 'GitHub' },
 			{ to: 'https://drive.google.com/file/d/1A583KvoxQYENKU4906acYr8Om4b7Dzmf/view', label: 'Paper' }
 		],
 		logo: Assets.Aneurysm,
@@ -122,7 +122,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
 		links: [{ to: 'https://github.com/kabirbagai21/chatbot', label: 'GitHub' }],
-		logo: Assets.Svelte,
+		logo: Assets.Chat,
 		name: 'Chat Server',
 		skills: getSkills('C', 'shell'),
 		type: 'Systems Programming',

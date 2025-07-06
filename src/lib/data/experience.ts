@@ -6,7 +6,7 @@ const title = 'Experience';
 
 const items: Array<Experience> = [
 	{
-		slug: 'open-sourcer',
+		slug: 'ibm',
 		company: 'IBM',
 		description: 'Leveraging IBM watsonx to develop generative and agentic AI solutions for clients in the public and federal markets',
 		contract: ContractType.Internship,
@@ -21,7 +21,7 @@ const items: Array<Experience> = [
 		shortDescription: 'Customer Success Management'
 	},
 	{
-		slug: 'software-freelance',
+		slug: 'vumc',
 		company: 'Vanderbilt University Medical Center',
 		description: 'I designed and implemented a deep learning pipeline to segment the choroid plexus in brain MRIs—a task complicated by anatomical variability and low contrast. I built the system around a custom 3D UNet architecture and developed a fully automated preprocessing workflow (registration, normalization, data loading) to support large-scale neuroimaging data. To improve performance, I combined three MRI modalities (T1, T2, FLAIR) into a single multi-channel input, leveraging their distinct contrast properties. I also implemented custom data augmentation techniques to enhance generalization given the limited training set, resulting in an 8% improvement in Dice score on the test set.',
 		contract: ContractType.Internship,

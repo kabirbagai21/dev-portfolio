@@ -89,6 +89,7 @@ const Assets = {
 	StuddyBuddy: asset('studybuddy.png'),
 	Ethereum: asset('receiptchain.webp'),
 	TCP: asset('tcp.png'),
+	Chat: asset('chat.png'),
 };
 
 export default Assets;
