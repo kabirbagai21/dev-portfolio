@@ -18,7 +18,7 @@ const items: Array<Experience> = [
 		color: 'blue',
 		links: [],
 		logo: Assets.IBM,
-		shortDescription: 'Customer Success Management'
+		shortDescription: 'watsonx.ai + watsonx.orchestrate'
 	},
 	{
 		slug: 'vumc',
@@ -31,7 +31,9 @@ const items: Array<Experience> = [
 		skills: getSkills('pytorch', 'py'),
 		name: 'Machine Learning Researcher',
 		color: 'gold',
-		links: [],
+		links: [
+			{ to: 'https://drive.google.com/file/d/1A583KvoxQYENKU4906acYr8Om4b7Dzmf/view', label: 'Conference Paper' }
+		],
 		logo: Assets.Vandy,
 		shortDescription: 'Center for Imaging and Biomarker Development.'
 	},

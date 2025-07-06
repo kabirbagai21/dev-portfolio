@@ -5,6 +5,7 @@
 	import EmptyMarkdown from '$lib/components/common/markdown/empty-markdown.svelte';
 	import Markdown from '$lib/components/common/markdown/markdown.svelte';
 	import ScreenshotCard from '$lib/components/common/screenshot/screenshot-card.svelte';
+	import VideoCard from '$lib/components/common/video/video-card.svelte';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import H1 from '$lib/components/ui/typography/h1.svelte';
@@ -75,7 +76,6 @@
 				<div class="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 					{#each data.item.videos as video, index (index)}
 						<div class="video-card">
-							{#if video.src.includes('youtube.com') || video.src.includes('youtu.be')}
 								<iframe
 									class="w-full h-[160px] aspect-video"
 									src={video.src.replace('watch?v=', 'embed/') + '?start=130'}
@@ -84,7 +84,6 @@
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 									allowfullscreen
 								></iframe>
-							{/if}
 							<Muted>{video.label}</Muted>
 						</div>
 					{/each}
