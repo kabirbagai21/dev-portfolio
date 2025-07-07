@@ -67,7 +67,7 @@ const items: Array<Project> = [
 		shortDescription:
 			'This project uses a dataset of images of street traffic captured at the Amsterdam Ave. and 120th Street intersection. The goal is to build a model that can effectively identify rare',
 		links: [
-			{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' },
+			{ to: 'https://github.com/kabirbagai21/traffic_disruption_detection', label: 'GitHub' },
 			{ to: 'https://drive.google.com/file/d/1m2p37F_YhCSSonPSIXPIVtfj9LtXZFst/view?usp=sharing', label: 'Paper' }
 
 		],
