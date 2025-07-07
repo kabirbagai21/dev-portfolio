@@ -8,7 +8,7 @@ const items: Array<Project> = [
 		slug: 'cerebral-aneurysm',
 		color: '#5e95e3',
 		description:
-			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography (TOF-MRA). I used a 3D U-Net architecture, weak (spherical) labels and incorporated anatomically informed sliding windows. Our intelligent patch selection strategy guided by vascular anatomy helped the model focus on the most high-probabilty regions, significantly improving efficiency and accuracy. I also optimized the pipeline\'s memory usage—reducing the training footprint by over 40%—through custom TensorFlow operations and efficient data loading. I was able to achieve a 0.76 Dice score and 83% sensitivity on the test set, demonstrating the model\'s effectiveness in identifying aneurysms in complex 3D MRA volumes.',
+			'This a deep learning system for detecting and segmenting intracranial cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography (TOF-MRA). We used a 3D U-Net architecture, weak (spherical) labels and incorporated anatomically informed sliding windows. Our intelligent patch selection strategy guided by vascular anatomy helped the model focus on the most high-probabilty regions, significantly improving efficiency and accuracy. We also optimized the pipeline\'s memory usage—reducing the training footprint by over 40%—through custom TensorFlow operations and efficient data loading. We were able to achieve a 0.76 Dice score and 83% sensitivity on the test set, demonstrating the model\'s effectiveness in identifying aneurysms in complex 3D MRA volumes.',
 		shortDescription:
 			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography',
 		links: [
@@ -17,8 +17,23 @@ const items: Array<Project> = [
 		],
 		logo: Assets.Aneurysm,
 		name: 'Cerebral Aneurysm Segmentation in TOF-MRA',
-		skills: getSkills('py', 'tensorflow'),
-		type: 'Deep Learning Model'
+		skills: getSkills('py', 'tensorflow', 'gcp'),
+		type: 'Deep Learning Model',
+		screenshots: [
+			{
+				label: 'Output Segmentation (Axial View)',
+				src: `${base}/screenshots/axial.png`,
+			},
+			{
+				label: 'Output Segmentation (Sagittal View)', 
+				src: `${base}/screenshots/saggital.png`
+			},
+			{
+				label: 'UNet Architecture',
+				src: `${base}/screenshots/unet.png`
+			}
+			
+		]
 	},
 	{
 		slug: 'tcp',
@@ -27,7 +42,7 @@ const items: Array<Project> = [
 			'This is a custom implementation of a transport-layer protocol (TCP) designed for reliable data transfer over an unstable, simulated network prone to packet loss and bit corruption. It features sliding window flow control, segment retransmission, and hashed checksums for integrity. Stateful connection handling is implemented with a three-way handshake, robust timeout logic, and clean termination procedures. The system uses multithreading on both client and server sides—one thread manages incoming messages into a buffer, while others handle connection state. The core components include mrt_server.py (server-side connect, send, close logic), mrt_client.py (client-side accept, receive, close logic), segment.py (for segment construction and parsing), and network.py (a loss-prone network simulator). Key protocol elements include sequenced data segments for in order delivery, ACKs, sliding window-based flow control, timeout-triggered retransmissions, and FIN resend mechanisms for reliable termination.',
 		shortDescription:
 			'This is a custom implementation of a transport-layer protocol (TCP) designed for reliable data transfer',
-		links: [{ to: 'https://github.com/kabirbagai21/chatbot', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/kabirbagai21/Custom_RTP_Implementation', label: 'GitHub' }],
 		logo: Assets.TCP,
 		name: 'Reliable Transport Protocol Implementation',
 		skills: getSkills('py', 'shell'),
@@ -58,7 +73,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.Traffic,
 		name: 'Traffic Disruption Detection with Zero-Shot VLM',
-		skills: getSkills('py', 'tensorflow'),
+		skills: getSkills('py', 'tensorflow', 'gcp'),
 		type: 'Deep Learning Model',
 		screenshots: [
 			{
@@ -88,6 +103,29 @@ const items: Array<Project> = [
 		]
 	}, 
 	{
+		slug: 'robotics',
+		color: 'yellow',
+		description:
+			'As part of my computational robotics course, I implemented and deployed motion planning algorithms, including A*, LPA*, and Rapidly-Exploring Random Trees (RRT), to enable autonomous navigation in complex, dynamic environments. To support accurate localization and mapping, I explored state estimation techniques such as Particle Filters, Kalman Filters, and EKF-SLAM, achieving fast and stable convergence. In a simulated environment, I also integrated computer vision and machine learning techniques for real-time collision detection and developed inverse kinematics solutions for precise manipulation of the KUKA iiwa robotic arm. ',
+		shortDescription:
+			'Implementations of various robotics algorithms, including path planning, localization, kinematics and mapping in simulated environments.',
+		links: [{ to: 'https://github.com/kabirbagai21/comp_robotics', label: 'GitHub' }],
+		logo: Assets.Robot,
+		name: 'Robotics Algorithms',
+		skills: getSkills('py', 'jupyter', 'opencv'),
+		type: 'Robotics',
+		screenshots: [
+			{ label: 'RRT', src: `${base}/screenshots/rrt.png` },
+			{label: 'Collision Detection', src: `${base}/screenshots/collision.png` },
+			{label: 'LPA* Path Planning', src: `${base}/screenshots/lpa.png`},
+			{label: 'Inverse Kinematics using GD', src: `${base}/screenshots/ikgd.png` },
+		],
+		videos: [
+			{ label: 'Particle Filter', src: `${base}/screenshots/particle_filter.mp4` },
+			{ label: 'EKF SLAM', src: `${base}/screenshots/ekf_slam.mp4` },
+		]
+	},
+	{
 		slug: 'receipt-chain',
 		color: 'green',
 		description:
@@ -114,13 +152,14 @@ const items: Array<Project> = [
 			},
 		]
 	},
+	
 	{
 		slug: 'chatbot',
 		color: 'cyan',
 		description:
-			'A .',
+			'This project is a multi-client chat server written in C using low-level POSIX socket programming (TCP) and I/O multiplexing with select() to support real-time communication between multiple clients. The server handles all connected clients in a single-threaded, event-driven loop, efficiently monitoring incoming messages and broadcasting them to all other connected users. Clients connect via TCP and support interactive input via stdin, allowing users to send messages to the server in real-time. The server acts as a relay, receiving messages from clients and broadcasting them to all other active clients.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'This project is a multi-client chat server written in C using low-level POSIX socket programming.',
 		links: [{ to: 'https://github.com/kabirbagai21/chatbot', label: 'GitHub' }],
 		logo: Assets.Chat,
 		name: 'Chat Server',

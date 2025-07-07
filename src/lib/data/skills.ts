@@ -233,6 +233,22 @@ const items = [
 		logo: Assets.Heroku,
 		name: 'Heroku',
 		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'gcp',
+		color: 'green',
+		description: '',
+		logo: Assets.GCP,
+		name: 'Google Cloud Platform',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'jupyter',
+		color: 'orange',
+		description: '',
+		logo: Assets.Jupyter,
+		name: 'Jupyter Notebook',
+		category: 'devops'
 	})
 ] as const;
 

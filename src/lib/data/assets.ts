@@ -84,12 +84,15 @@ const Assets = {
 	DynamoDB: asset('dynamodb.png'),
 	UCSD: asset('ucsd.webp'),
 	Traffic: asset('Traffic.png'),
-	Aneurysm: asset('Aneurysm.jpg'),
+	Aneurysm: asset('aneurysm.avif'),
 	Heroku: asset('heroku.webp'),
 	StuddyBuddy: asset('studybuddy.png'),
-	Ethereum: asset('receiptchain.webp'),
+	Ethereum: asset('eth.png'),
 	TCP: asset('tcp.png'),
 	Chat: asset('chat.png'),
+	Robot: asset('robots.png'),
+	GCP: asset('gcp.png'),
+	Jupyter: asset('jupyter.png'),
 };
 
 export default Assets;
