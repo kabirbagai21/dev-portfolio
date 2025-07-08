@@ -12,13 +12,13 @@ const items: Array<Project> = [
 		shortDescription:
 			'This a deep learning system for detecting and segmenting cerebral aneurysms in Time-of-Flight Magnetic Resonance Angiography',
 		links: [
-			{ to: 'https://github.com/ecbme6040/e6691_2025spring_Project_ABAD_kb3343_mmk2266', label: 'GitHub' },
+			{ to: 'https://github.com/kabirbagai21/automated_cerebral_aneurysm_detection', label: 'GitHub' },
 			{ to: 'https://drive.google.com/file/d/1A583KvoxQYENKU4906acYr8Om4b7Dzmf/view', label: 'Paper' }
 		],
 		logo: Assets.Aneurysm,
 		name: 'Cerebral Aneurysm Segmentation in TOF-MRA',
 		skills: getSkills('py', 'tensorflow', 'gcp'),
-		type: 'Deep Learning Model',
+		type: 'Advanced Deep Learning',
 		screenshots: [
 			{
 				label: 'Output Segmentation (Axial View)',
@@ -46,7 +46,7 @@ const items: Array<Project> = [
 		logo: Assets.TCP,
 		name: 'Reliable Transport Protocol Implementation',
 		skills: getSkills('py', 'shell'),
-		type: 'Network Programming',
+		type: 'Computer Networks',
 		screenshots: [
 			{
 				label: 'Example Test Case 1',
@@ -74,10 +74,10 @@ const items: Array<Project> = [
 		logo: Assets.Traffic,
 		name: 'Traffic Disruption Detection with Zero-Shot VLM',
 		skills: getSkills('py', 'tensorflow', 'gcp'),
-		type: 'Deep Learning Model',
+		type: 'Advanced Deep Learning',
 		screenshots: [
 			{
-				label: 'Example Image',
+				label: 'Example Input',
 				src: `${base}/screenshots/streetview.jpg`
 			},
 			{
@@ -98,7 +98,7 @@ const items: Array<Project> = [
 		logo: Assets.StuddyBuddy,
 		name: 'Study Buddy',
 		skills: getSkills('ruby-on-rails', 'heroku'),
-		type: 'Full Stack Web App',
+		type: 'Engineering, Software as a Service',
 		videos: [ {label: 'Demo', src: 'https://www.youtube.com/watch?v=PuXueC5JVNc'},
 		]
 	}, 
@@ -113,7 +113,7 @@ const items: Array<Project> = [
 		logo: Assets.Robot,
 		name: 'Robotics Algorithms',
 		skills: getSkills('py', 'jupyter', 'opencv'),
-		type: 'Robotics',
+		type: 'Computational Robotics',
 		screenshots: [
 			{ label: 'RRT', src: `${base}/screenshots/rrt.png` },
 			{label: 'Collision Detection', src: `${base}/screenshots/collision.png` },
@@ -135,8 +135,8 @@ const items: Array<Project> = [
 		links: [{ to: 'https://github.com/AmieRamie/COMS-6998-Blockchain-Project-Backend', label: 'GitHub' }],
 		logo: Assets.Ethereum,
 		name: 'ReceiptChain',
-		skills: getSkills('solidity', 'flask', 'fastapi', 'dynamo', 'reactjs'),
-		type: 'Blockchain App',
+		skills: getSkills('solidity', 'flask', 'fastapi', 'dynamo'),
+		type: 'Engineering, Web3/Blockchain',
 		screenshots: [
 			{
 				label: 'Onboarding Flow',

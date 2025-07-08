@@ -15,7 +15,7 @@ const items: Array<Experience> = [
 		period: { from: new Date(2025, 5, 0) },
 		skills: getSkills('kubernetes', 'dock', 'fastapi'),
 		name: 'AI Architect',
-		color: 'blue',
+		color: '#0530AD',
 		links: [],
 		logo: Assets.IBM,
 		shortDescription: 'watsonx.ai + watsonx.orchestrate'
