@@ -150,6 +150,9 @@ const items: Array<Project> = [
 				label: 'Smart Contracts',
 				src: `${base}/screenshots/smartcontracts.png`
 			},
+		],
+		videos: [
+			{ label: 'Transaction Receipt UI', src: `${base}/screenshots/ui_demo (2).mp4` },
 		]
 	},
 	
