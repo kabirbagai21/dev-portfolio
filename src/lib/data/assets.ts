@@ -93,6 +93,7 @@ const Assets = {
 	Robot: asset('robots.png'),
 	GCP: asset('gcp.png'),
 	Jupyter: asset('jupyter.png'),
+	DNA: asset('dna.png')
 };
 
 export default Assets;

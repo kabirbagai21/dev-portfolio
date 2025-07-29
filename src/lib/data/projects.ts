@@ -88,6 +88,35 @@ const items: Array<Project> = [
 		]
 	},
 	{
+		slug: 'mlfg',
+		color: 'green',
+		description:
+			'Built HMM and RNN models from scratch to predict CpG methylation states from single-cell bisulfite sequencing data as part of a graduate-level Computational Genomics course. Implemented the Baum-Welch algorithm (EM) for training the HMM, which modeled sequential dependencies between CpG sites and achieved 88% accuracy. Developed and compared multiple RNN architectures (vanilla RNN, GRU, LSTM) to learn local DNA context, with the best model reaching 84% accuracy. Explored both independent and joint modeling of cells to evaluate generalization across biological replicates.',
+		shortDescription:
+			'Built HMM and RNN models from scratch to predict CpG methylation states from single-cell bisulfite sequencing data ',
+		links: [{ to: 'https://github.com/kabirbagai21/cpg_methylation', label: 'GitHub' }],
+		logo: Assets.DNA,
+		name: 'Sequence Modeling of CpG Methylation States',
+		skills: getSkills('py', 'pytorch'),
+		type: 'Machine Learning for Functional Genomics',
+		screenshots: [
+			{
+				label: 'Emission Matrix for HMM',
+				src: `${base}/screenshots/emission.png`
+			},
+			{
+				label: 'Transition Matrix for HMM',
+				src: `${base}/screenshots/transition.png`
+			},
+			{
+				label: 'Accuracy vs Hidden States',
+				src: `${base}/screenshots/accuracy_hmm.png`
+			},
+		],
+		videos: [
+		]
+	},
+	{
 		slug: 'study-buddy',
 		color: 'purple',
 		description:
@@ -171,7 +200,8 @@ const items: Array<Project> = [
 		screenshots: [
 			
 		]
-	}
+	},
+	
 ];
 
 const title = 'Projects';
