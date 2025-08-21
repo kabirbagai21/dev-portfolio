@@ -161,7 +161,7 @@ const items: Array<Project> = [
 			'A decentralized application for secure receipt management and automated escrow services using blockchain technology. The system enables sellers to issue digital receipts and manages funds in escrow, with automated release mechanisms and return functionality. We built the smart contracts in Solidity and deployed them on a simulated ethereum blockchain using Truffle and Ganache to emulate real-world buyer-seller scenarios. The backend was built with Flask and FastAPI to access endpoints and DynamoDB for data storage, while the frontend was developed using ReactJS.',
 		shortDescription:
 			'A decentralized application for secure receipt management and automated escrow services using blockchain technology.',
-		links: [{ to: 'https://github.com/AmieRamie/COMS-6998-Blockchain-Project-Backend', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/kabirbagai21/ReceiptChain-Backend-Public', label: 'GitHub' }],
 		logo: Assets.Ethereum,
 		name: 'ReceiptChain',
 		skills: getSkills('solidity', 'flask', 'fastapi', 'dynamo'),
