@@ -179,9 +179,13 @@ const items: Array<Project> = [
 				label: 'Smart Contracts',
 				src: `${base}/screenshots/smartcontracts.png`
 			},
+			{
+				label: 'Architecture',
+				src: `${base}/screenshots/receiptchain-architecture.png`
+			},
 		],
 		videos: [
-			{ label: 'Transaction Receipt UI', src: `${base}/screenshots/ui_demo (2).mp4` },
+			{ label: 'Transaction Receipt UI', src: `${base}/screenshots/refund_release.mp4` },
 		]
 	},
 	
