@@ -31,6 +31,10 @@ const items: Array<Project> = [
 			{
 				label: 'UNet Architecture',
 				src: `${base}/screenshots/unet.png`
+			},
+			{
+				label: 'Probabilistic atlas of aneurysm locations',
+				src: `${base}/screenshots/atlas.png`
 			}
 			
 		]
